@@ -1,0 +1,30 @@
+<h2>Add bartender</h2>
+
+<form method="post" action="<%= @path %>/bartender/add/">
+
+  <div class="field">
+    <label>Name</label>
+    <div class="input">
+      <input type="text" name="name">
+    </div>
+  </div>
+
+  <div class="field">
+    <label>Locations</label>
+    <div class="input">
+      <input type="text" name="locations">
+    </div>
+  </div>
+
+  <div class="field">
+    <label>Creator</label>
+    <div class="input">
+      <input type="text" name="creator">
+    </div>
+  </div>
+
+  <div class="actions">
+    <input type="submit" class="btn primary" value="Add bartender">
+  </div>
+
+</form>

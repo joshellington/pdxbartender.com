@@ -1,4 +1,8 @@
+require 'net/https'
+require 'json'
+require 'openssl'
 require 'mongo_mapper'
+require './lib/places'
 require './lib/models'
 
 enable :sessions

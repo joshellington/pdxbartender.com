@@ -1,0 +1,12 @@
+<h2>Latest Bartenders</h2>
+
+<% @bartenders.each do |b| %>
+  <div class="bartender">
+    <h4><%= b.name %></h4>
+    <p>
+    <% b.locations.each do |l| %>
+      <a href="<%= get_place(l)['result']['url'] %>"><%= get_place(l)['result']['name'] %></a>
+    <% end %>
+    </p>
+  </div>
+<% end %>

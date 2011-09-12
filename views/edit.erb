@@ -1,0 +1,19 @@
+<form method="post" action="<%= @path %>/bartender/edit/">
+
+  <div class="input">
+    <label>Name</label>
+    <input type="text" name="name" value="<%= @b.name %>">
+  </div>
+
+  <div class="input">
+    <label>Locations</label>
+    <input type="text" name="locations" value="<%= @b.locations %>">
+  </div>
+  
+  <input type="hidden" name="creator" value="<%= @b.creator %>">
+
+  <div class="actions">
+    <input type="submit" class="btn primary" value="Edit bartender">
+  </div>
+
+</form>
